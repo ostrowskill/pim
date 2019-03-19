@@ -1,0 +1,15 @@
+.logo-type {
+    padding: 1em;
+    &.align-item {
+        justify-content: center;
+    }
+}
+.logo {
+    max-width: 2.5rem;
+}
+
+.type {
+    max-width: 6.25rem;
+    margin-left: 1rem;
+}
+

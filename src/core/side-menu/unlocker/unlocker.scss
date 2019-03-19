@@ -1,0 +1,26 @@
+.unlocker {
+    display: none;
+}
+@media screen and (min-width: 960px) {
+    .unlocker {
+        background-color: tomato;
+        cursor: pointer;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        box-shadow: 4px 0 5px rgba(0, 0, 0, .3);
+
+        position: absolute;
+        top: 50%;
+        right: -.9rem;
+        transform: translateY(-50%);
+        z-index: 10;
+
+        &.show {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}

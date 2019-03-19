@@ -1,0 +1,28 @@
+.profile-card {
+    background-color: rgba(0, 0 , 0, .05);
+    padding: 1em;
+    
+}
+
+.profile-picture {
+    background-color: rgba(0, 0 , 0, .05);
+
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+
+    border-radius: 50%;
+
+    //align-self: center;
+    //justify-self: center;
+    &.align-item {
+        margin: 0 auto;
+    }
+}
+
+.profile-info {
+    margin-left: 1em;
+}
+
+.f-wrap {
+    align-items: center;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Source+Sans+Pro:400,900&subset=latin-ext');
+@import './variables';
+
+//normalize
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    &.active {
+        color: #D4AC3C!important;
+        font-weight: 900;
+    }
+}
+
+
+// hide/show classes
+.hide {
+    display: none;
+}
+
+// shared bootstrap
+.f-wrap {
+    display: flex;
+}
+
+//links from every navigation
+.nav-link {
+    display: block;
+    padding: 1rem 1.5rem;
+
+    &:hover {
+        background-color: rgba($color: #000000, $alpha: .05);
+    }
+}
+
+//items in side navigations
+.item .desc {
+    margin-left: 1.5em;
+}
+
+.item .sidenav-icon {
+    font-size: 1.3rem;
+}
+
+// transition effects
+.view-transition-enter-active, .view-transition-leave-active {
+    transition: opacity .3s, transform .3s;
+  }
+  .view-transition-enter, .view-transition-leave-to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+@import './product';
+// keyframes
+@import './keyframes';
